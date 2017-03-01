@@ -404,26 +404,30 @@ section.module.parallax h1 {
   margin-top: 20px;
 }
 .side { 
+  @media all and (max-width: 1528px) {	
+	margin-left: -22%;
+	padding-right: 3%;
+	padding-left: 2%;
+  }
   font-weight: 600;
   font-size: 20px;
   width: 20%;
   margin-top: 90px;
+  background-color: $greybae;
+  border-radius: 0% 15% 15% 0%;
+  &:hover {
+    margin-left: 0px;
+  }
   @media all and (max-width: 549px){
     display: none;
   }
 }
 .resume-download {
-  border-top: 2px solid $purps;
-  border-bottom: 2px solid $purps;
-  border-right: 2px solid $purps;
   margin-top: 2px;
   width: 100%;
   text-align: center;
 }
 .side-links {
-  border-bottom: 2px solid $purps;
-  border-top: 2px solid $purps;
-  border-right: 2px solid $purps;
   width: 100%;
   text-align: center;
 }
@@ -433,8 +437,11 @@ section.module.parallax h1 {
   margin: 0 auto;
 }
 .resume-link {
-  color: $greybae;
+  color: $white;
   width: 10%;
+  &:hover {
+    color: $purps;
+  }
 }
 .resume-download-mobile {  
   text-align: center;
