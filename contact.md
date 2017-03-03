@@ -2,6 +2,6 @@
 layout: page
 title: contact
 permalink: /contact/
-image: /images/contact.jpg
+image: /images/mac.jpg
 order: 4
 ---

@@ -403,44 +403,34 @@ section.module.parallax h1 {
   width: 20%;
   margin-top: 20px;
 }
-.side { 
-  @media all and (max-width: 1528px) {	
-	margin-left: -22%;
-	padding-right: 3%;
-	padding-left: 2%;
-  }
+.side {
+  font-family: $header-footer-family;
+  margin-left: 5%;
   font-weight: 600;
-  font-size: 20px;
-  width: 20%;
+  font-size: 18px;
+  width: 19%;
   margin-top: 90px;
-  background-color: $greybae;
-  border-radius: 0% 15% 15% 0%;
-  &:hover {
-    margin-left: 0px;
-  }
-  @media all and (max-width: 549px){
+  position: relative;
+  @media all and (max-width: 1024px){
     display: none;
   }
 }
-.resume-download {
-  margin-top: 2px;
-  width: 100%;
-  text-align: center;
-}
 .side-links {
-  width: 100%;
-  text-align: center;
+  text-align: left;
+  border: 1px solid $greybae;
+  padding-left: 10px;
 }
 .side-links ul {
-  list-style: none;
   border: none;
+  list-style-position: inside;
   margin: 0 auto;
 }
+
 .resume-link {
-  color: $white;
-  width: 10%;
+  color: $greybae;
   &:hover {
     color: $purps;
+    font-size: 19px;
   }
 }
 .resume-download-mobile {  

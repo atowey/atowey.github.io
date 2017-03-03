@@ -10,16 +10,16 @@ layout: default
         <ul>
           {% for section in page.sections %}
             <li>
-              <a href="#{{ section | escape }}" class="resume-link">{{ section }}</a>
+              <a href="#{{ section | escape }}" class="resume-link">{{ section | upcase }}</a>
             </li>
           {% endfor %}
+	  {% if page.title == 'resume' %}
+            <li>
+                <a class="resume-link" href="/resume.pdf">DOWNLOAD PDF</a>
+            </li>
+          {% endif %} 
         </ul>
-      </div>
-        {% if page.title == 'resume' %}
-          <div class="resume-download">
-            <a class="resume-link" href="/resume.pdf">download pdf</a>
-          </div>
-        {% endif %}  
+      </div> 
     </div>
   </div>
   <div class="wrapper">
