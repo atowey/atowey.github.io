@@ -28,7 +28,7 @@
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase }}</a>
           {% endif %}
         {% endfor %}
-        <span class="text-oval"><a class="page-link contact" href="mailto: {{ site.email }}">{{ "contact" | escape | upcase }}</a></span>
+        <span class="text-oval"><a class="page-link contact" href="mailto:{{ site.email }}">{{ "contact" | escape | upcase }}</a></span>
       </div>
     </nav>
 
