@@ -26,10 +26,9 @@
             </div>
           {% elsif my_page.title != 'contact' %}
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase }}</a>
-          {% else %}
-              <span class="text-oval"><a class="page-link contact" href="mailto: {{ site.email }}">{{ my_page.title | escape | upcase }}</a></span>
           {% endif %}
         {% endfor %}
+        <span class="text-oval"><a class="page-link contact" href="mailto: {{ site.email }}">{{ "contact" | escape | upcase }}</a></span>
       </div>
     </nav>
 
