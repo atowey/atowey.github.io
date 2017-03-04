@@ -15,6 +15,6 @@
               <a class="bottom-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase }}</a><br />
           {% endif %}
       {% endfor %}
-
+      <a class="bottom-link" href="mailto: {{ site.email }}"> {{ "contact" | escape | upcase }} </a><br />
   </div>
 </footer>
